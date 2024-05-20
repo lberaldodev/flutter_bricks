@@ -13,7 +13,7 @@ class {{feature_name.pascalCase()}}DataSourceImpl implements {{feature_name.pasc
   @override
   Future<{{feature_name.pascalCase()}}Entity> execute() async {
     try {
-      final response = await this._httpClient.get('$_baseUrl');
+      final response = await _httpClient.get($_baseUrl);
       final json = response.dataAsJsonObject;
       return {{feature_name.pascalCase()}}EntityMapper.fromJson(json);
     } on HttpResponseError catch (e) {

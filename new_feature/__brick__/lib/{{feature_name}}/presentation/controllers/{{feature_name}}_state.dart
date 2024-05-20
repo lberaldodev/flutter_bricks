@@ -1,6 +1,5 @@
 part of '{{feature_name.snakeCase()}}_bloc.dart';
 
-@immutable
 sealed class {{feature_name.pascalCase()}}State extends Equatable {}
 
 class {{feature_name.pascalCase()}}InitialState extends {{feature_name.pascalCase()}}State {
@@ -17,7 +16,7 @@ class {{feature_name.pascalCase()}}SuccessState extends {{feature_name.pascalCas
   });
 
   @override
-  List<Object?> get props => [this.data];
+  List<Object?> get props => [data];
 }
 
 class {{feature_name.pascalCase()}}ErrorState extends {{feature_name.pascalCase()}}State {
@@ -28,5 +27,5 @@ class {{feature_name.pascalCase()}}ErrorState extends {{feature_name.pascalCase(
   });
 
   @override
-  List<Object?> get props => [this.isNetworkError];
+  List<Object?> get props => [isNetworkError];
 }
