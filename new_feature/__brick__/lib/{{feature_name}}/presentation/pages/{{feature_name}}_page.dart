@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
 class {{feature_name.pascalCase()}}Page extends StatefulWidget {
-  const {{feature_name.pascalCase()}}Page ({Key? key}) : super(key: key);
+  const {{feature_name.pascalCase()}}Page({super.key});
 
   @override
-  _{{feature_name.pascalCase()}}PageState createState() => _{{feature_name.pascalCase()}}PageState();
+  State<{{feature_name.pascalCase()}}Page> createState() => _{{feature_name.pascalCase()}}PageState();
 }
 
 class _{{feature_name.pascalCase()}}PageState extends State<{{feature_name.pascalCase()}}Page> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: Center(
+        child: Text('Auth Page'),
+      ),
+    );
   }
 }

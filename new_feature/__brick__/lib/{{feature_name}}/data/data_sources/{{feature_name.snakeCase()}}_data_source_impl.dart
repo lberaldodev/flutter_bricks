@@ -1,7 +1,7 @@
 import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/data/data_sources/{{feature_name.snakeCase()}}_data_source.dart';
 import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/data/mappers/{{feature_name.snakeCase()}}_entity_mapper.dart';
-import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/shared/errors.dart';
 import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/domain/entities/{{feature_name.snakeCase()}}_entity.dart';
+import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/shared/errors.dart';
 
 class {{feature_name.pascalCase()}}DataSourceImpl implements {{feature_name.pascalCase()}}DataSource {
   static const _baseUrl = 'https://api.example.com';
