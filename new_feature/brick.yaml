@@ -36,3 +36,8 @@ vars:
     description: Name of the package
     default: Dash
     prompt: What is the package name?
+  module_name:
+    type: string
+    description: Name of the package
+    default: Dash
+    prompt: What is the module name?

@@ -1,7 +1,7 @@
-import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/data/data_sources/{{feature_name.snakeCase()}}_data_source.dart';
-import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/data/mappers/{{feature_name.snakeCase()}}_entity_mapper.dart';
-import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/domain/entities/{{feature_name.snakeCase()}}_entity.dart';
-import 'package:{{package_name.snakeCase()}}/{{feature_name.snakeCase()}}/shared/errors.dart';
+import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/data/data_sources/{{feature_name.snakeCase()}}_data_source.dart';
+import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/data/mappers/{{feature_name.snakeCase()}}_entity_mapper.dart';
+import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/domain/entities/{{feature_name.snakeCase()}}_entity.dart';
+import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/shared/errors.dart';
 
 class {{feature_name.pascalCase()}}DataSourceImpl implements {{feature_name.pascalCase()}}DataSource {
   static const _baseUrl = 'https://api.example.com';
@@ -13,7 +13,7 @@ class {{feature_name.pascalCase()}}DataSourceImpl implements {{feature_name.pasc
   @override
   Future<{{feature_name.pascalCase()}}Entity> execute() async {
     try {
-      final response = await _httpClient.get($_baseUrl);
+      final response = await _httpClient.get(_baseUrl);
       final json = response.dataAsJsonObject;
       return {{feature_name.pascalCase()}}EntityMapper.fromJson(json);
     } on HttpResponseError catch (e) {
