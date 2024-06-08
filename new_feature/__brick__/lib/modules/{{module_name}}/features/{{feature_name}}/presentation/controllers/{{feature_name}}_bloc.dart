@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/domain/entities/{{feature_name.snakeCase()}}_entity.dart';
-import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/domain/use_cases/find_{{feature_name.snakeCase()}}_info_use_case.dart';
-import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/shared/errors.dart';
+import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/{{feature_name.snakeCase()}}.dart';
 
 part '{{feature_name.snakeCase()}}_state.dart';
 

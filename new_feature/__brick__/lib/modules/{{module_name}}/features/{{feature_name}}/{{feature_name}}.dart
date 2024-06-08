@@ -1,4 +1,5 @@
 export 'data/data_sources/{{feature_name.snakeCase()}}_data_source.dart';
+export 'data/data_sources/{{feature_name.snakeCase()}}_data_source_impl.dart';
 export 'data/mappers/{{feature_name.snakeCase()}}_entity_mapper.dart';
 export 'data/repositories/{{feature_name.snakeCase()}}_repository_impl.dart';
 export 'di/{{feature_name.snakeCase()}}_di.dart';

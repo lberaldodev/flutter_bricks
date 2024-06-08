@@ -1,14 +1,7 @@
 import 'dart:async';
 
-import 'package:{{package_name}}/modules/{{module_name}}/features/{{feature_name}}/data/data_sources/{{feature_name}}_data_source.dart';
-import 'package:{{package_name}}/modules/{{module_name}}/features/{{feature_name}}/data/data_sources/{{feature_name}}_data_source_impl.dart';
-import 'package:{{package_name}}/modules/{{module_name}}/features/{{feature_name}}/data/repositories/{{feature_name}}_repository_impl.dart';
-import 'package:{{package_name}}/modules/{{module_name}}/features/{{feature_name}}/domain/repositories/{{feature_name}}_repository.dart';
-import 'package:{{package_name}}/modules/{{module_name}}/features/{{feature_name}}/domain/use_cases/find_{{feature_name}}_info_use_case.dart';
-import 'package:{{package_name}}/modules/{{module_name}}/features/{{feature_name}}/presentation/controllers/{{feature_name}}_bloc.dart';
-import 'package:{{package_name}}/modules/{{module_name}}/features/{{feature_name}}/router/{{feature_name}}_router_navigator.dart';
-import 'package:{{package_name}}/modules/core/injection/injection.dart';
-import 'package:{{package_name}}/modules/core/modules/injection_module.dart';
+import 'package:{{package_name}}/modules/core/core.dart';
+import 'package:{{package_name.snakeCase()}}/modules/{{module_name}}/features/{{feature_name}}/{{feature_name.snakeCase()}}.dart';
 
 class {{feature_name.pascalCase()}}InjectionModule implements InjectionModule {
   @override
